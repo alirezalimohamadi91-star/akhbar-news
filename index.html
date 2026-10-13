@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>akhbar NEWS | اخبار روز</title>
+<meta name="description" content="akhbar NEWS؛ تازه‌ترین خبرها از ایران و جهان، فناوری، ورزش، اقتصاد و فرهنگ.">
+<style>
+:root{--blue:#1265d8;--blue2:#0a3f91;--pale:#eaf3ff;--ink:#17243b;--muted:#64748b;--line:#e4eaf2;--bg:#f5f8fc;--white:#fff;--shadow:0 10px 28px rgba(20,61,110,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,"Segoe UI",sans-serif;line-height:1.8}
+a{color:inherit;text-decoration:none}.container{width:min(1180px,92%);margin:auto}
+.topline{background:#092d66;color:#dceaff;font-size:12px;padding:7px 0}.topline .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brandbar{background:white;border-bottom:1px solid var(--line)}.brandrow{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:19px 0}
+.brand{display:flex;align-items:center;gap:12px}.logo{width:54px;height:54px;background:linear-gradient(145deg,#2385ff,#0644a4);border-radius:15px;display:grid;place-items:center;color:white;font-size:25px;font-weight:900;box-shadow:0 8px 18px #1265d833}.brand h1{font-size:27px;letter-spacing:-.8px;margin:0;line-height:1.25;color:#0b2f67}.brand h1 span{color:var(--blue)}.brand small{display:block;color:var(--muted);font-size:12px;margin-top:4px}
+.search{display:flex;width:min(360px,45%);background:#f4f7fb;border:1px solid var(--line);border-radius:12px;padding:5px}.search input{width:100%;border:0;outline:0;background:transparent;padding:9px 12px;font:inherit;font-size:13px}.search button{border:0;background:var(--blue);color:white;border-radius:9px;padding:8px 15px;cursor:pointer;font:inherit}
+.navwrap{background:white}.nav{display:flex;gap:4px;align-items:center;overflow:auto;border-top:1px solid #f0f3f8}.nav a{white-space:nowrap;padding:12px 15px;font-size:13px;color:#42536d;border-bottom:3px solid transparent}.nav a:hover,.nav a.active{color:var(--blue);border-color:var(--blue);font-weight:bold}
+.breaking{background:#eaf3ff;border:1px solid #d4e6ff;border-radius:12px;margin:22px auto;padding:10px 14px;display:flex;align-items:center;gap:13px;font-size:13px}.breaking strong{background:#1265d8;color:white;padding:4px 10px;border-radius:7px;white-space:nowrap}.breaking span{color:#21466f}
+.ad{border:1px dashed #b7cbe6;background:linear-gradient(100deg,#f1f7ff,#fff);border-radius:13px;min-height:94px;display:flex;align-items:center;justify-content:center;text-align:center;color:#7790b1;font-size:12px;margin:18px 0;position:relative;overflow:hidden}.ad b{display:block;font-size:15px;color:#5878a4}.ad small{display:block;margin-top:2px}.ad:before{content:"AD";position:absolute;left:10px;top:7px;font-size:9px;color:#9aabc1;border:1px solid #c9d7e8;border-radius:4px;padding:0 4px}
+.hero-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:18px;margin-top:18px}.hero{min-height:365px;border-radius:18px;overflow:hidden;position:relative;background:linear-gradient(145deg,#123e80,#1675df);color:white;box-shadow:var(--shadow)}.hero-art{position:absolute;inset:0;background:radial-gradient(circle at 75% 22%,#72c7ff88,transparent 23%),radial-gradient(circle at 20% 35%,#ffffff20,transparent 25%),linear-gradient(135deg,transparent 42%,#041d4b88);}.hero-art:after{content:"NEWS";position:absolute;left:25px;top:18px;font-size:clamp(50px,9vw,105px);font-weight:900;letter-spacing:-5px;color:#ffffff13;direction:ltr}.hero-content{position:absolute;inset:auto 0 0;padding:28px;background:linear-gradient(transparent,#061c43e8)}.tag{display:inline-block;background:#dcecff;color:#1459ad;font-size:11px;font-weight:bold;padding:4px 9px;border-radius:6px}.hero .tag{background:#ffffff21;color:#fff;border:1px solid #ffffff40}.hero h2{font-size:clamp(22px,3vw,34px);line-height:1.55;margin:12px 0}.meta{font-size:11px;opacity:.8;display:flex;gap:13px;flex-wrap:wrap}
+.side-stories{display:grid;gap:13px}.mini-story{display:flex;gap:14px;background:white;border:1px solid var(--line);border-radius:14px;padding:14px;min-height:110px;transition:.2s}.mini-story:hover,.card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}.thumb{width:104px;min-width:104px;border-radius:10px;background:linear-gradient(135deg,#dbeaff,#9ec7ff);display:grid;place-items:center;font-size:31px}.mini-story h3{font-size:14px;line-height:1.7;margin:5px 0 7px}.mini-story p{font-size:11px;color:var(--muted);margin:0}
+.section-head{display:flex;align-items:center;justify-content:space-between;margin:30px 0 14px}.section-head h2{font-size:21px;margin:0;display:flex;align-items:center;gap:10px}.section-head h2:before{content:"";width:5px;height:26px;background:var(--blue);border-radius:5px}.section-head a{color:var(--blue);font-size:12px}
+.content-layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.card{background:white;border:1px solid var(--line);border-radius:15px;overflow:hidden;transition:.2s}.card-art{height:145px;display:grid;place-items:center;font-size:45px;background:linear-gradient(135deg,#d8eaff,#eff6ff)}.card-body{padding:15px}.card h3{font-size:15px;line-height:1.8;margin:9px 0}.card p{font-size:12px;color:var(--muted);margin:0 0 13px}.card .meta{color:var(--muted);opacity:1}
+.sidebar-box{background:white;border:1px solid var(--line);border-radius:15px;padding:18px;margin-bottom:17px}.sidebar-box h3{font-size:16px;margin:0 0 14px;padding-bottom:10px;border-bottom:1px solid var(--line)}.popular{display:flex;gap:11px;margin:13px 0;align-items:flex-start}.number{width:28px;height:28px;border-radius:8px;background:var(--pale);color:var(--blue);display:grid;place-items:center;font-weight:bold;font-size:12px;flex-shrink:0}.popular p{margin:0;font-size:12px;line-height:1.8}.popular small{display:block;color:var(--muted);font-size:10px;margin-top:4px}
+.newsletter{background:linear-gradient(145deg,#0c438f,#1675df);color:white;border-radius:15px;padding:20px}.newsletter h3{margin:0 0 7px;font-size:18px}.newsletter p{font-size:12px;color:#e1efff}.newsletter input{width:100%;padding:11px;border:0;border-radius:8px;margin:6px 0 9px;font:inherit;font-size:12px}.newsletter button{width:100%;border:0;border-radius:8px;padding:10px;background:#fff;color:#1459ad;font-weight:bold;cursor:pointer}
+.category-row{display:flex;gap:9px;flex-wrap:wrap;margin:15px 0}.category-row button{border:1px solid #d8e5f5;background:white;color:#45617f;padding:8px 14px;border-radius:20px;font:inherit;font-size:12px;cursor:pointer}.category-row button.active,.category-row button:hover{background:var(--blue);color:white;border-color:var(--blue)}
+.empty{display:none;text-align:center;padding:35px;color:var(--muted);background:white;border-radius:12px}
+footer{margin-top:45px;background:#092d66;color:#d9e7fa;padding:32px 0 18px}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:25px}.footer-grid h3{color:white;margin:0 0 10px}.footer-grid p,.footer-grid a{font-size:12px;color:#bfd2ee}.footer-links{display:grid;gap:6px}.copyright{border-top:1px solid #ffffff20;margin-top:25px;padding-top:15px;font-size:11px;color:#9fb9dd;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.demo-note{background:#fff8df;border:1px solid #f4df9b;color:#755b13;padding:10px 13px;border-radius:10px;font-size:11px;margin-top:12px}
+@media(max-width:850px){.hero-grid,.content-layout{grid-template-columns:1fr}.side-stories{grid-template-columns:repeat(2,minmax(0,1fr))}.sidebar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.sidebar .ad{grid-column:1/-1}.hero{min-height:330px}}
+@media(max-width:570px){.brandrow{align-items:flex-start;flex-direction:column}.search{width:100%}.brand h1{font-size:23px}.side-stories,.cards,.sidebar,.footer-grid{grid-template-columns:1fr}.mini-story{min-height:100px}.hero{min-height:350px}.breaking{align-items:flex-start}.breaking span{line-height:1.7}.section-head h2{font-size:18px}.ad{min-height:78px}}
+</style>
+</head>
+<body>
+<div class="topline"><div class="container"><span id="today">اخبار روز، در یک نگاه</span><span>سرعت در خبررسانی • دقت در اطلاع‌رسانی</span></div></div>
+<header class="brandbar"><div class="container brandrow">
+<a class="brand" href="#" aria-label="صفحه اصلی"><div class="logo">اخ</div><div><h1>akhbar <span>NEWS</span></h1><small>نبض خبر؛ از ایران تا جهان</small></div></a>
+<form class="search" id="searchForm"><input id="searchInput" placeholder="جست‌وجو در خبرها..." aria-label="جست‌وجو"><button type="submit">جست‌وجو</button></form>
+</div></header>
+<div class="navwrap"><nav class="container nav" id="nav">
+<a href="#" class="active" data-cat="همه">صفحه اصلی</a><a href="#latest" data-cat="ایران">ایران</a><a href="#latest" data-cat="جهان">جهان</a><a href="#latest" data-cat="اقتصاد">اقتصاد</a><a href="#latest" data-cat="فناوری">فناوری</a><a href="#latest" data-cat="ورزش">ورزش</a><a href="#latest" data-cat="فرهنگ">فرهنگ و هنر</a><a href="#latest" data-cat="سلامت">سلامت</a><a href="#latest" data-cat="علم">علم</a>
+</nav></div>
+<main class="container">
+<div class="breaking"><strong>ویژه</strong><span>به akhbar NEWS خوش آمدید؛ این نسخه نمایشی است و خبرهای نمونه آن واقعی یا تأییدشده نیستند.</span></div>
+<div class="ad"><div><b>جایگاه تبلیغات شما</b><small>بنر تبلیغاتی • فضای نمونه برای همکاری با کسب‌وکارها</small></div></div>
+<section class="hero-grid">
+<article class="hero" data-category="ایران"><div class="hero-art"></div><div class="hero-content"><span class="tag">گزارش ویژه · نمونه</span><h2>اخبار مهم را ساده، سریع و یک‌جا دنبال کنید</h2><div class="meta"><span>✦ تحریریه akhbar NEWS</span><span>◷ نسخه نمایشی</span></div></div></article>
+<div class="side-stories">
+<article class="mini-story" data-category="فناوری"><div class="thumb">💻</div><div><span class="tag">فناوری</span><h3>دنیای فناوری با سرعت در حال تغییر است</h3><p>خبر نمونه · برای نمایش طراحی</p></div></article>
+<article class="mini-story" data-category="اقتصاد"><div class="thumb">📈</div><div><span class="tag">اقتصاد</span><h3>چطور خبرهای اقتصادی را بهتر دنبال کنیم؟</h3><p>راهنمای نمونه · نسخه نمایشی</p></div></article>
+<article class="mini-story" data-category="ورزش"><div class="thumb">⚽</div><div><span class="tag">ورزش</span><h3>مرور تازه‌ترین رویدادهای دنیای ورزش</h3><p>خبر نمونه · برای نمایش طراحی</p></div></article>
+</div>
+</section>
+<div class="section-head" id="latest"><h2>آخرین خبرها</h2><a href="#latest" id="clearFilter">نمایش همه ←</a></div>
+<div class="category-row" id="filters"><button class="active" data-cat="همه">همه خبرها</button><button data-cat="ایران">ایران</button><button data-cat="جهان">جهان</button><button data-cat="اقتصاد">اقتصاد</button><button data-cat="فناوری">فناوری</button><button data-cat="ورزش">ورزش</button><button data-cat="فرهنگ">فرهنگ و هنر</button><button data-cat="سلامت">سلامت</button></div>
+<div class="content-layout"><section><div class="cards" id="cards">
+<article class="card" data-category="ایران" data-search="ایران خبر محلی جامعه"><div class="card-art">🏙️</div><div class="card-body"><span class="tag">ایران · نمونه</span><h3>خبرهای ایران؛ نگاهی به رویدادهای روز</h3><p>این متن نمونه است. خبرهای واقعی را با منبع معتبر و تاریخ انتشار اضافه کنید.</p><div class="meta"><span>◷ نمونه</span><span>✎ تحریریه</span></div></div></article>
+<article class="card" data-category="جهان" data-search="جهان بین الملل دنیا"><div class="card-art" style="background:linear-gradient(135deg,#dcecff,#c9e9ff)">🌐</div><div class="card-body"><span class="tag">جهان · نمونه</span><h3>مهم‌ترین رویدادهای بین‌المللی در یک نگاه</h3><p>برای انتشار، جزئیات خبر را بررسی و به منبع اصلی ارجاع دهید.</p><div class="meta"><span>◷ نمونه</span><span>✎ تحریریه</span></div></div></article>
+<article class="card" data-category="اقتصاد" data-search="اقتصاد بازار کسب و کار پول"><div class="card-art" style="background:linear-gradient(135deg,#e1f6ed,#c6eddd)">💹</div><div class="card-body"><span class="tag">اقتصاد · نمونه</span><h3>اقتصاد و بازار؛ توضیح ساده برای همه</h3><p>گزارش‌های اقتصادی را همراه با تاریخ، داده و منبع منتشر کنید.</p><div class="meta"><span>◷ نمونه</span><span>✎ تحریریه</span></div></div></article>
+<article class="card" data-category="فناوری" data-search="فناوری هوش مصنوعی موبایل اینترنت"><div class="card-art" style="background:linear-gradient(135deg,#e8e4ff,#d4d4ff)">🤖</div><div class="card-body"><span class="tag">فناوری · نمونه</span><h3>فناوری و هوش مصنوعی چه تغییراتی ایجاد می‌کنند؟</h3><p>خبر فناوری را با لینک منبع و توضیح روشن برای مخاطب منتشر کنید.</p><div class="meta"><span>◷ نمونه</span><span>✎ تحریریه</span></div></div></article>
+<article class="card" data-category="ورزش" data-search="ورزش فوتبال مسابقه تیم"><div class="card-art" style="background:linear-gradient(135deg,#fff0d7,#ffdfb0)">🏆</div><div class="card-body"><span class="tag">ورزش · نمونه</span><h3>ورزش امروز؛ نتایج و حاشیه‌های مسابقات</h3><p>پیش از انتشار نتیجه یا نقل‌قول، آن را از منبع رسمی بررسی کنید.</p><div class="meta"><span>◷ نمونه</span><span>✎ تحریریه</span></div></div></article>
+<article class="card" data-category="فرهنگ" data-search="فرهنگ هنر سینما کتاب موسیقی"><div class="card-art" style="background:linear-gradient(135deg,#ffe4ed,#ffd0df)">🎭</div><div class="card-body"><span class="tag">فرهنگ و هنر · نمونه</span><h3>از سینما تا کتاب؛ تازه‌های فرهنگ و هنر</h3><p>برای عکس و متن دیگران، حقوق نشر و ذکر منبع را رعایت کنید.</p><div class="meta"><span>◷ نمونه</span><span>✎ تحریریه</span></div></div></article>
+<article class="card" data-category="سلامت" data-search="سلامت بهداشت زندگی"><div class="card-art" style="background:linear-gradient(135deg,#ddf8f5,#bcece6)">🩺</div><div class="card-body"><span class="tag">سلامت · نمونه</span><h3>سلامت و زندگی؛ اطلاعاتی برای آگاهی بیشتر</h3><p>مطالب سلامت باید از منابع معتبر تهیه شوند و جایگزین پزشک نیستند.</p><div class="meta"><span>◷ نمونه</span><span>✎ تحریریه</span></div></div></article>
+<article class="card" data-category="علم" data-search="علم فضا پژوهش طبیعت"><div class="card-art" style="background:linear-gradient(135deg,#e0edff,#bed6ff)">🔭</div><div class="card-body"><span class="tag">علم · نمونه</span><h3>دانستنی‌های علمی و کشف‌های تازه</h3><p>خبرهای علمی را با پیوند به پژوهش یا اعلامیه رسمی تکمیل کنید.</p><div class="meta"><span>◷ نمونه</span><span>✎ تحریریه</span></div></div></article>
+</div><div class="empty" id="empty">خبری با این عبارت پیدا نشد. عبارت دیگری را امتحان کنید.</div>
+<div class="ad"><div><b>جایگاه تبلیغات در میان خبرها</b><small>بعداً می‌توانید این بخش را به بنر واقعی تبلیغاتی تبدیل کنید.</small></div></div>
+<div class="demo-note">توجه: این صفحه فعلاً نمونه‌ی نمایشی است؛ خبرها، جست‌وجو و فیلترها در همین مرورگر کار می‌کنند، اما پنل مدیریت، انتشار آنلاین و تبلیغات واقعی هنوز متصل نشده‌اند.</div>
+</section>
+<aside class="sidebar">
+<div class="sidebar-box"><h3>🔥 پربازدیدهای نمونه</h3><div class="popular"><span class="number">۱</span><p>چطور خبر درست را از شایعه تشخیص دهیم؟<small>راهنمای تحریریه</small></p></div><div class="popular"><span class="number">۲</span><p>مهم‌ترین روندهای فناوری در سال جاری<small>فناوری · نمونه</small></p></div><div class="popular"><span class="number">۳</span><p>مرور رویدادهای ورزشی هفته<small>ورزش · نمونه</small></p></div><div class="popular"><span class="number">۴</span><p>راهنمای ساده برای خواندن خبرهای اقتصادی<small>اقتصاد · نمونه</small></p></div></div>
+<div class="ad"><div><b>تبلیغات جانبی</b><small>جایگاه ۳۰۰ × ۲۵۰</small></div></div>
+<div class="newsletter"><h3>خبرنامه akhbar NEWS</h3><p>این فرم در نسخه نمایشی است و هنوز ایمیلی ذخیره نمی‌کند.</p><form id="newsletter"><input type="email" placeholder="ایمیل شما" required aria-label="ایمیل شما"><button type="submit">عضویت در خبرنامه</button></form></div>
+</aside></div>
+</main>
+<footer><div class="container"><div class="footer-grid"><div><div class="brand"><div class="logo">اخ</div><div><h1 style="font-size:22px;color:white">akhbar <span>NEWS</span></h1><small style="color:#bfd2ee">نبض خبر؛ از ایران تا جهان</small></div></div><p>رسانه‌ای برای دنبال کردن موضوعات روز؛ از ایران و جهان تا فناوری، ورزش، اقتصاد و فرهنگ.</p></div><div><h3>دسته‌بندی‌ها</h3><div class="footer-links"><a href="#latest">ایران و جهان</a><a href="#latest">اقتصاد و فناوری</a><a href="#latest">ورزش و فرهنگ</a></div></div><div><h3>درباره سایت</h3><div class="footer-links"><a href="#about">درباره ما</a><a href="#contact">تماس با ما</a><a href="#privacy">حریم خصوصی</a><a href="#ads">تبلیغات</a></div></div></div><div class="copyright"><span>© akhbar NEWS — نسخه نمایشی</span><span>پیش از انتشار عمومی، اطلاعات تماس و سیاست‌های سایت را تکمیل کنید.</span></div></div></footer>
+<script>
+const cards=[...document.querySelectorAll('#cards .card')], minis=[...document.querySelectorAll('.mini-story')], hero=document.querySelector('.hero');
+let currentCat='همه', currentQuery='';
+function update(){
+ let shown=0;
+ cards.forEach(c=>{const cat=c.dataset.category||'';const txt=(c.innerText+' '+(c.dataset.search||'')).toLowerCase();const ok=(currentCat==='همه'||cat===currentCat)&&txt.includes(currentQuery.toLowerCase());c.style.display=ok?'':'none';if(ok)shown++});
+ minis.forEach(c=>{c.style.display=(currentCat==='همه'||c.dataset.category===currentCat)&&c.innerText.toLowerCase().includes(currentQuery.toLowerCase())?'flex':'none'});
+ if(hero)hero.style.display=(currentCat==='همه'||hero.dataset.category===currentCat)&&hero.innerText.toLowerCase().includes(currentQuery.toLowerCase())?'':'none';
+ document.getElementById('empty').style.display=shown?'none':'block';
+ document.querySelectorAll('#filters button').forEach(b=>b.classList.toggle('active',b.dataset.cat===currentCat));
+ document.querySelectorAll('#nav a').forEach(a=>a.classList.toggle('active',a.dataset.cat===currentCat));
+}
+document.querySelectorAll('#filters button').forEach(b=>b.addEventListener('click',()=>{currentCat=b.dataset.cat;update()}));
+document.querySelectorAll('#nav a[data-cat]').forEach(a=>a.addEventListener('click',()=>{currentCat=a.dataset.cat;update()}));
+document.getElementById('searchForm').addEventListener('submit',e=>{e.preventDefault();currentQuery=document.getElementById('searchInput').value.trim();update();document.getElementById('latest').scrollIntoView({behavior:'smooth'})});
+document.getElementById('clearFilter').addEventListener('click',()=>{currentCat='همه';currentQuery='';document.getElementById('searchInput').value='';update()});
+document.getElementById('newsletter').addEventListener('submit',e=>{e.preventDefault();alert('این قابلیت در نسخه نمایشی فعال نیست؛ برای ذخیره ایمیل‌ها باید سرویس خبرنامه متصل شود.')});
+const d=new Date();document.getElementById('today').textContent='امروز: '+new Intl.DateTimeFormat('fa-IR',{weekday:'long',year:'numeric',month:'long',day:'numeric'}).format(d);
+</script>
+</body></html>
